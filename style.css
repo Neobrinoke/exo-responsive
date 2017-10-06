@@ -10,8 +10,7 @@ body {
     background-color: #D81159;
     padding: 1em;
     border-radius: 6px;
-    margin: 0.4em;
-    height: 3em; }
+    margin: 0.4em; }
   body main {
     display: flex;
     flex-direction: row;
@@ -38,12 +37,9 @@ body {
     background-color: #FFBC42;
     padding: 1em;
     border-radius: 6px;
-    margin: 0.4em;
-    height: 3em; }
+    margin: 0.4em; }
 
 @media screen and (max-width: 740px) {
-  body header {
-    height: auto; }
   body main {
     height: 80vh;
     flex-direction: column; }
@@ -51,8 +47,6 @@ body {
       width: auto; }
     body main article {
       width: auto;
-      order: -1; }
-  body footer {
-    height: auto; } }
+      order: -1; } }
 
 /*# sourceMappingURL=style.css.map */

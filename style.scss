@@ -16,7 +16,6 @@ body {
 	header {
 		background-color: #D81159;
 		@include jolie-deco();
-		height: 3em;
 	}
 
 	main {
@@ -45,16 +44,11 @@ body {
 	footer {
 		background-color: #FFBC42;
 		@include jolie-deco();
-		height: 3em;
 	}
 }
 	
 @media screen and (max-width: 740px) {
-	body {
-		header {
-			height: auto;
-		}
-
+	body {    
 		main {
 			height: 80vh;
 			flex-direction: column;
@@ -66,10 +60,6 @@ body {
 				width: auto;
 				order: -1;
 			}
-		}
-
-		footer {
-			height: auto;
 		}
 	}
 }
