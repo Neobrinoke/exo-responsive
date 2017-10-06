@@ -1,66 +1,62 @@
-@mixin jolie-decoupe() {
+@mixin jolie-deco() {
 	padding: 1em;
 	border-radius: 6px;
 	margin: 0.4em;
 }
 
 body {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    header {
-        background-color: #D81159;
-		@include jolie-decoupe();
-    }
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+	header {
+		background-color: #D81159;
+		@include jolie-deco();
+	}
 
-    main {
-        display: flex;
+	main {
+		display: flex;
 		flex-direction: row;
 		height: 80vh;
-        nav {
-            background-color: #73D2DE;
-            width: 20vw;
-			@include jolie-decoupe();
-        }
-    
-        article {
-            background-color: #218380;
-            width: 60vw;
-			@include jolie-decoupe();
-        }
-    
-        aside {
-            background-color: #8F2D56;
-            width: 20vw;
-			@include jolie-decoupe();
-        }
-    }
+		nav {
+			background-color: #73D2DE;
+			width: 20vw;
+			@include jolie-deco();
+		}
+	
+		article {
+			background-color: #218380;
+			width: 60vw;
+			@include jolie-deco();
+		}
+	
+		aside {
+			background-color: #8F2D56;
+			width: 20vw;
+			@include jolie-deco();
+		}
+	}
 
-    footer {
-        background-color: #FFBC42;
-		@include jolie-decoupe();
-    }
+	footer {
+		background-color: #FFBC42;
+		@include jolie-deco();
+	}
 }
-    
+	
 @media screen and (max-width: 740px) {
-    body {    
-        main {
-            height: 80vh;
-            flex-direction: column;
-            nav {
+	body {    
+		main {
+			height: 80vh;
+			flex-direction: column;
+			aside, nav {
 				width: initial;
-            }
-        
-            article {
+			}
+		
+			article {
 				width: initial;
-                height: 60vh;
-                order: -1;
-            }
-        
-            aside {
-				width: initial;
-            }
-        }
-    }
+				height: 60vh;
+				order: -1;
+			}
+		}
+	}
 }

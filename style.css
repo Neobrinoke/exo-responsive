@@ -40,13 +40,11 @@ body {
   body main {
     height: 80vh;
     flex-direction: column; }
-    body main nav {
+    body main aside, body main nav {
       width: initial; }
     body main article {
       width: initial;
       height: 60vh;
-      order: -1; }
-    body main aside {
-      width: initial; } }
+      order: -1; } }
 
 /*# sourceMappingURL=style.css.map */
