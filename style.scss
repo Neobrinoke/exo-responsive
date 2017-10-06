@@ -4,6 +4,10 @@
 	margin: 0.4em;
 }
 
+* {
+	font-family: sans-serif;
+}
+
 body {
 	display: flex;
 	margin: 0;
@@ -12,6 +16,7 @@ body {
 	header {
 		background-color: #D81159;
 		@include jolie-deco();
+		height: 3em;
 	}
 
 	main {
@@ -20,43 +25,51 @@ body {
 		height: 80vh;
 		nav {
 			background-color: #73D2DE;
-			width: 20vw;
 			@include jolie-deco();
+			width: 10em;
 		}
 	
 		article {
 			background-color: #218380;
-			width: 60vw;
+			flex: 1;
 			@include jolie-deco();
 		}
 	
 		aside {
 			background-color: #8F2D56;
-			width: 20vw;
 			@include jolie-deco();
+			width: 10em;
 		}
 	}
 
 	footer {
 		background-color: #FFBC42;
 		@include jolie-deco();
+		height: 3em;
 	}
 }
 	
 @media screen and (max-width: 740px) {
-	body {    
+	body {
+		header {
+			height: auto;
+		}
+
 		main {
 			height: 80vh;
 			flex-direction: column;
 			aside, nav {
-				width: initial;
+				width: auto;
 			}
 		
 			article {
-				width: initial;
-				height: 60vh;
+				width: auto;
 				order: -1;
 			}
+		}
+
+		footer {
+			height: auto;
 		}
 	}
 }
