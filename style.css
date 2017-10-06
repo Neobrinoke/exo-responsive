@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column; }
+  body header {
+    height: 10vh;
+    background-color: #D81159;
+    width: 100vw; }
+  body main {
+    display: flex;
+    flex-direction: row;
+    height: 80vh; }
+    body main nav {
+      background-color: #73D2DE;
+      width: 20vw; }
+    body main article {
+      background-color: #218380;
+      width: 60vw; }
+    body main aside {
+      background-color: #8F2D56;
+      width: 20vw; }
+  body footer {
+    height: 10vh;
+    background-color: #FFBC42;
+    width: 100vw; }
+
+@media screen and (max-width: 640px) {
+  body main {
+    height: 80vh;
+    flex-direction: column; }
+    body main nav {
+      width: 100vw;
+      height: 10vh; }
+    body main article {
+      width: 100vw;
+      height: 60vh;
+      order: -1; }
+    body main aside {
+      width: 100vw;
+      height: 10vh; } }
+
+/*# sourceMappingURL=style.css.map */
